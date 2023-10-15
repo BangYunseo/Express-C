@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define SQMETER_PER_PYEONG 3.3058		// 1평을 3.3 제곱미터로 정의
+#define SQMETER_PER_PYEONG 3.3058			// 1평을 3.3 제곱미터로 정의
 
 int main(void)
 {
