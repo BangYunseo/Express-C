@@ -37,10 +37,13 @@ int main(void)
 	
 	((num10 & mask) == 0) ? printf("0") : printf("1"); 	// num10과 mask의 2진수 값이 일치하면 0을, 일치하지 않다면 1을 출력한다.
 	mask = mask >> 1;					// 오른쪽으로 1비트 이동한다.
+	
 	((num10 & mask) == 0) ? printf("0") : printf("1"); 	// num10과 mask의 2진수 값이 일치하면 0을, 일치하지 않다면 1을 출력한다.
 	mask = mask >> 1;					// 오른쪽으로 1비트 이동한다.
+	
 	((num10 & mask) == 0) ? printf("0") : printf("1"); 	// num10과 mask의 2진수 값이 일치하면 0을, 일치하지 않다면 1을 출력한다.
 	mask = mask >> 1;					// 오른쪽으로 1비트 이동한다.
+	
 	((num10 & mask) == 0) ? printf("0") : printf("1"); 	// num10과 mask의 2진수 값이 일치하면 0을, 일치하지 않다면 1을 출력한다.
 
 	printf("\n");						// 줄바꿈
