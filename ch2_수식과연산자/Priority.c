@@ -28,5 +28,4 @@ int main(void)
 	-2 + 1 = -1. */
 	printf("%d\n", result);		
 	return 0;
-
 }
