@@ -1,4 +1,3 @@
-// 결합 규칙과 우선 순위를 이용한 예제
 #include <stdio.h>
 
 int main(void)
