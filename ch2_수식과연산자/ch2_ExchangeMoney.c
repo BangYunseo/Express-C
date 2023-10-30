@@ -1,11 +1,9 @@
-// 거스름돈 출력하기
 #include <stdio.h>
 
 int main(void)
 {
-	int Money, Price;							// 물건 값을 저장할 변수 Money와 사용자가 낸 돈을 저장할 변수 Price를 생성한다.
-	int Change, C5000, C1000, C500, C100;					// 거스름돈을 저장할 변수 Change와 각각 5천원, 천원, 5백원, 백원의 화폐와 동전 수를 저장하기 위한 변수 C5000, C1000, C500, C100을 생성한다.
-
+	int Money, Price;							
+	int Change, C5000, C1000, C500, C100;					
 	printf("물건 값을 입력하시오 : ");			
 	scanf_s("%d", &Money);						
 
