@@ -1,4 +1,3 @@
-// 조건 연산자 ? 사용해보기
 #include <stdio.h>
 
 int main(void)
