@@ -3,8 +3,8 @@
 int main(void)
 {
 	unsigned int num10;		// 10진수를 입력받을 변수 num10을 생성한다. 음수가 아닌 값만 저장하기 때문에 unsigned를 붙인다.
-	printf("10 진수 : ");		// 10진수를 입력받는다.
-	scanf_s("%u", &num10);		// 입력받은 10진수의 값을 2진수로 저장한 값을 num10 변수에 저장한다.
+	printf("10 진수 : ");		
+	scanf_s("%u", &num10);		
 
 	unsigned int mask = 1 << 7;	// 왼쪽으로 7비트 이동한다. mask = 10000000
 
@@ -20,7 +20,7 @@ int main(void)
  	(github ch2 참고)
 	*/
 
-	printf("2 진수 : ");					// 2진수를 입력한다.
+	printf("2 진수 : ");					
 
 	((num10 & mask) == 0) ? printf("0") : printf("1");	// num10과 mask의 2진수 값이 일치하면 0을, 일치하지 않다면 1을 출력한다.
 	mask = mask >> 1;					// 오른쪽으로 1비트 이동한다.
@@ -44,7 +44,6 @@ int main(void)
 	mask = mask >> 1;					// 오른쪽으로 1비트 이동한다.
 	
 	((num10 & mask) == 0) ? printf("0") : printf("1"); 	// num10과 mask의 2진수 값이 일치하면 0을, 일치하지 않다면 1을 출력한다.
-
-	printf("\n");						// 줄바꿈
+	printf("\n");						
 	return 0;
 }
