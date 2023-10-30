@@ -1,4 +1,3 @@
-// 논리연산자 이해하기
 #include <stdio.h>
 
 int main(void)
