@@ -1,4 +1,3 @@
-// 10진수를 2진수로 출력하기(비트연산자)
 #include <stdio.h>
 
 int main(void)
