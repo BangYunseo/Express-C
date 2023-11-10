@@ -9,8 +9,8 @@ int main(void){
 	scanf_s("%d", &key);	
 
 	for (i = 0; i < SIZE; i++){
-		if (list[i] == key)				// 만약 list[i]의 값이 입력받은 key값과 일치한다면
-			printf("탐색 성공 인덱스 = %d\n", i);	// 탐색 성공 인덱스인 변수 i를 출력
+		if (list[i] == key)					// 만약 list[i]의 값이 입력받은 key값과 일치한다면
+			printf("탐색 성공 인덱스 = %d\n", i);		// 탐색 성공 인덱스인 변수 i를 출력
 	}
 	printf("탐색 종료\n");	
 	return 0;
