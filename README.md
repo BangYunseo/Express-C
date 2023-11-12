@@ -9,5 +9,5 @@
 ### ch5 - [함수](https://github.com/BangYunseo/TIL/blob/main/C/ch5_Function.md)
 ### ch6 - [변수](https://github.com/BangYunseo/TIL/blob/main/C/ch6_Variable.md)
 ### ch7 - [배열](https://github.com/BangYunseo/TIL/blob/main/C/ch7_Array.md)
-### ch8 - [포인터]()
+### ch8 - [포인터](https://github.com/BangYunseo/TIL/blob/main/C/ch8_Pointer.md)
 ### ch9 - [구조체]()
