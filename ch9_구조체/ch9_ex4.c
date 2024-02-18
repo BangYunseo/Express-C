@@ -1,29 +1,30 @@
-// ex4 : Æ÷ÀÎÅÍ¸¦ ÅëÇÑ ±¸Á¶Ã¼ ÂüÁ¶
 #include <stdio.h>
 
-struct student	// ±¸Á¶Ã¼ student¸¦ ¼±¾ðÇÑ´Ù.
+struct student	
 {
-	int number;			// Á¤¼öÇü º¯¼öÀÌÀÚ ÇÐ¹øÀ» ÀúÀåÇÒ º¯¼ö number¸¦ »ý¼ºÇÑ´Ù.
-	char name[10];		// ¹®ÀÚÇü ¹è¿­ÀÌÀÚ ÀÌ¸§À» ÀúÀåÇÒ ¹è¿­ name[20]À» »ý¼ºÇÑ´Ù.
-	double grade;		// ½Ç¼öÇü º¯¼öÀÌÀÚ ÇÐÁ¡À» ÀúÀåÇÒ º¯¼ö grade¸¦ »ý¼ºÇÑ´Ù.
+	int number;		
+	char name[10];		
+	double grade;		
 };
 int main(void)
 {
-	struct student s = { 20190001, "È«±æµ¿", 4.3 };
-	// ±¸Á¶Ã¼ student¸¦ º¯¼ö s·Î ¼±¾ðÇÏ°í °¢°¢ º¯¼ö¿Í ¹è¿­À» 1, È«±æµ¿, 4.3À¸·Î ÃÊ±âÈ­
-	struct student *p;		// ±¸Á¶Ã¼ student¸¦ Æ÷ÀÎÅÍ p·Î ¼±¾ðÇÑ´Ù.
+	struct student s = { 20240001, "í™ê¸¸ë™", 4.3 };
+	struct student *p;		// êµ¬ì¡°ì²´ studentë¥¼ í¬ì¸í„° pë¡œ ì„ ì–¸
 
-	p = &s;			// p¸¦ ±¸Á¶Ã¼ sÀÇ ÁÖ¼Ò°ªÀ¸·Î ÃÊ±âÈ­ÇÑ´Ù.	
+	p = &s;			// pë¥¼ êµ¬ì¡°ì²´ sì˜ ì£¼ì†Œê°’ìœ¼ë¡œ ì´ˆê¸°í™”
 
-	printf("ÇÐ¹ø : %d\tÀÌ¸§ : %s\tÇÐÁ¡ : %f\n", s.number, s.name, s.grade);
-	// ÇÐ¹ø, ÀÌ¸§, ÇÐÁ¡À» ±¸Á¶Ã¼¸¦ ÀÌ¿ëÇÑ º¯¼ö s.À» ÀÌ¿ëÇÑ ÇüÅÂ·Î Ãâ·ÂÇÑ´Ù.
-
-	printf("ÇÐ¹ø : %d\tÀÌ¸§ : %s\tÇÐÁ¡ : %f\n", (*p).number, (*p).name, (*p).grade);
-	// ÇÐ¹ø, ÀÌ¸§, ÇÐÁ¡À» ±¸Á¶Ã¼¸¦ ÀÌ¿ëÇÑ º¯¼ö (*p)À» ÀÌ¿ëÇÑ ÇüÅÂ·Î Ãâ·ÂÇÑ´Ù.
-	// *p´Â sÀÇ ÁÖ¼Ò°ªÀÇ °ªÀ» ÀÇ¹ÌÇÑ´Ù.
-
-	printf("ÇÐ¹ø : %d\tÀÌ¸§ : %s\tÇÐÁ¡ : %f\n", p->number, p->name, p->grade);
-	// ÇÐ¹ø, ÀÌ¸§, ÇÐÁ¡À» ±¸Á¶Ã¼¸¦ ÀÌ¿ëÇÑ º¯¼ö p->À» ÀÌ¿ëÇÑ ÇüÅÂ·Î Ãâ·ÂÇÑ´Ù.
+	printf("í•™ë²ˆ : %d\tì´ë¦„ : %s\tí•™ì  : %f\n", s.number, s.name, s.grade);
+	printf("í•™ë²ˆ : %d\tì´ë¦„ : %s\tí•™ì  : %f\n", (*p).number, (*p).name, (*p).grade);
+	// êµ¬ì¡°ì²´ë¥¼ ì´ìš©í•œ ë³€ìˆ˜ (*p)ì„ ì´ìš©í•œ ì¶œë ¥
+	// *pëŠ” sì˜ ì£¼ì†Œê°’ì˜ ê°’ì„ ì˜ë¯¸
+	
+	printf("í•™ë²ˆ : %d\tì´ë¦„ : %s\tí•™ì  : %f\n", p->number, p->name, p->grade);
+	// êµ¬ì¡°ì²´ë¥¼ ì´ìš©í•œ ë³€ìˆ˜ p->ì„ ì´ìš©í•œ ì¶œë ¥
 
 	return 0;
 }
+
+// ì¶œë ¥ ì˜ˆì‹œ
+// í•™ë²ˆ : 20240001 ì´ë¦„ : í™ê¸¸ë™ í•™ì  : 4.300000
+// í•™ë²ˆ : 20240001 ì´ë¦„ : í™ê¸¸ë™ í•™ì  : 4.300000
+// í•™ë²ˆ : 20240001 ì´ë¦„ : í™ê¸¸ë™ í•™ì  : 4.300000
